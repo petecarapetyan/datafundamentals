@@ -1,0 +1,94 @@
+body[layout='layout-home'] {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr minmax(692px, 950px) 1fr;
+  grid-template-rows: repeat(4, minmax(350px, auto)) auto;
+  grid-template-areas:
+    "head-l       head-main       head-r"
+    "content-l    content-main    content-r"
+    "content2-l   content2-main   content2-r"
+    "content3-l   content3-main   content3-r"
+    "foot-l       foot-main       foot-r"
+}
+
+.ga-head-l {
+  grid-area: head-l;
+}
+.header-grid-area {
+  grid-area: head-main;
+}
+.ga-head-r {
+  grid-area: head-r;
+}
+
+.ga-content-l {
+  grid-area: content-l;
+}
+.sidebar-grid-area {
+  grid-area: content-side;
+}
+.content-grid-area {
+  grid-area: content-main;
+}
+.ga-content-r {
+  grid-area: content-r;
+}
+
+.ga-content2-l {
+  grid-area: content2-l;
+}
+.ga-content2-main {
+  grid-area: content2-main;
+}
+.ga-content2-r {
+  grid-area: content2-r;
+}
+
+.ga-content3-l {
+  grid-area: content3-l;
+}
+.ga-content3-main {
+  grid-area: content3-main;
+}
+.ga-content3-r {
+  grid-area: content3-r;
+}
+
+.ga-foot-l {
+  grid-area: foot-l;
+}
+.ga-foot-main {
+  grid-area: foot-main;
+}
+.ga-foot-r {
+  grid-area: foot-r;
+}
+body[layout='layout-sidebar'], body[layout='layout-index'] {
+  grid-auto-rows: 0; 
+  grid-auto-columns: 0;
+  overflow-x: hidden;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 300px minmax(665px, 830px) 1fr;
+  grid-template-rows: 81px minmax(350px,auto) auto;
+  grid-template-areas:
+    "content-l  head-main     head-main     content-r"
+    "content-l  content-side  content-main  content-r"
+    "content-l  foot-main     foot-main     content-r"
+}
+
+@media (max-width: 1024px) {
+  body[layout='layout-home'], body[layout='layout-sidebar'], body[layout='layout-index']  {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 56px minmax(350px, 1fr) auto;
+    grid-template-areas:
+      "head-main"
+      "content-main"
+      "foot-main";
+    /* next 4 lines prevents stray grid items from being written WTF???????? */
+    grid-auto-rows: 0; 
+    grid-auto-columns: 0;
+    overflow-x: hidden;
+  }
+}

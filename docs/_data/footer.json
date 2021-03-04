@@ -1,44 +1,64 @@
 [
   {
-    "name": "Foo",
+    "name": "Lorem Ipsum Sites",
     "children": [
       {
-        "text": "Blog",
-        "href": "/blog/"
+        "text": "Walktown",
+        "href": "https://walktown.net"
       },
       {
-        "text": "Help and Feedback",
-        "href": "/help/"
+        "text": "Could Be",
+        "href": "https://couldbe.net"
+      },
+      {
+        "text": "myModeler",
+        "href": "https://myModeler.com"
+      },
+      {
+        "text": "WYSINATI",
+        "href": "https://wyisnati.com"
+      },
+      {
+        "text": "BTRG",
+        "href": "https://btrg.org"
       }
     ]
   },
   {
-    "name": "Bar",
+    "name": "Substance",
     "children": [
       {
-        "text": "Github",
-        "href": "https://github.com"
+        "text": "Rocket",
+        "href": "https://github.com/modernweb-dev/rocket"
       },
       {
-        "text": "Twitter",
-        "href": "https://twitter.com"
+        "text": "AppWriter",
+        "href": "https://appwriter.com"
       },
       {
-        "text": "Slack",
-        "href": "/about/slack/"
+        "text": "WebAppWriter",
+        "href": "https://webappwritercom"
+      },
+      {
+        "text": "dataFundamentals",
+        "href": "https://dataFundamentals.com"
+      },
+      {
+        "text": "Betterology Corp",
+        "href": "https://betterology.com"
       }
     ]
   },
   {
-    "name": "Yada",
+    "name": "Personal",
     "children": [
       {
-        "text": "Sponsor",
-        "href": "/about/sponsor/"
+        "text": "Aspie Automator",
+        "href": "https://aspieautomator.com"
       },
       {
-        "text": "Wah",
-        "href": "/wah/"
+        "text": "My Twitter",
+        "href": "https://twitter.com/appwritercom"
       }
     ]
   }
