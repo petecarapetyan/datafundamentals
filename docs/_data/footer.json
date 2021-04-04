@@ -1,26 +1,30 @@
 [
   {
-    "name": "Lorem Ipsum Sites",
+    "name": "Lorem Ipsum",
     "children": [
       {
-        "text": "Walktown",
-        "href": "https://walktown.net"
+        "text": "not-npr Theme Example",
+        "href": "https://appwriter.com"
       },
       {
-        "text": "Could Be",
-        "href": "https://couldbe.net"
+        "text": "not-ibm Theme Example",
+        "href": "https://walktownnet.web.app/"
       },
       {
-        "text": "myModeler",
-        "href": "https://myModeler.com"
+        "text": "not-slashdot Theme Example",
+        "href": "https://mymodelercom.web.app/"
       },
       {
-        "text": "WYSINATI",
-        "href": "https://wyisnati.com"
+        "text": "not-nyt Theme Example",
+        "href": "https://jukelox-7ec89.web.app/"
       },
       {
-        "text": "BTRG",
-        "href": "https://btrg.org"
+        "text": "not-axios Theme Example",
+        "href": "https://jeren-5de92.web.app/"
+      },
+      {
+        "text": "not-apnews Theme Example",
+        "href": "https://esuyp-fb794.web.app/"
       }
     ]
   },
@@ -32,16 +36,8 @@
         "href": "https://github.com/modernweb-dev/rocket"
       },
       {
-        "text": "AppWriter",
-        "href": "https://appwriter.com"
-      },
-      {
         "text": "WebAppWriter",
-        "href": "https://webappwritercom"
-      },
-      {
-        "text": "dataFundamentals",
-        "href": "https://dataFundamentals.com"
+        "href": "https://webappwriter.com"
       },
       {
         "text": "Betterology Corp",
