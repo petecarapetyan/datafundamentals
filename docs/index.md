@@ -31,6 +31,8 @@ teasers:
       src="/_merged_assets/_static/images/bulksplash-philplnt-X2PwqTUpXH8.jpg"
       alt="bulksplash-philplnt-X2PwqTUpXH8.jpg" />
 ---
+<hr>
+
 # 20 years bringing apps into the world
 
 Hi! 
