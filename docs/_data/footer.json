@@ -1,39 +1,59 @@
 [
   {
-    "name": "Lorem Ipsum",
+    "name": "Theme Examples",
     "children": [
       {
-        "text": "not-npr Theme Example",
+        "text": "not-npr",
         "href": "https://appwriter.com"
       },
       {
-        "text": "not-ibm Theme Example",
+        "text": "not-ibm",
         "href": "https://walktownnet.web.app/"
       },
       {
-        "text": "not-slashdot Theme Example",
+        "text": "not-slashdot",
         "href": "https://mymodelercom.web.app/"
       },
       {
-        "text": "not-nyt Theme Example",
+        "text": "not-nyt",
         "href": "https://jukelox-7ec89.web.app/"
       },
       {
-        "text": "not-axios Theme Example",
+        "text": "not-axios",
         "href": "https://jeren-5de92.web.app/"
       },
       {
-        "text": "not-apnews Theme Example",
+        "text": "not-apnews",
         "href": "https://esuyp-fb794.web.app/"
+      },
+      {
+        "text": "not-wired",
+        "href": "https://replitza.web.app/"
+      },
+      {
+        "text": "not-nyt",
+        "href": "https://jukelox-7ec89.web.app/"
+      },
+      {
+        "text": "not-next",
+        "href": "https://mulerain.web.app/"
+      },
+      {
+        "text": "not-github",
+        "href": "https://mtobwin.web.app"
+      },
+      {
+        "text": "not-fuelcell",
+        "href": "https://betterologist.web.app"
       }
     ]
   },
   {
-    "name": "Substance",
+    "name": "Actual Substance?",
     "children": [
       {
         "text": "Rocket",
-        "href": "https://github.com/modernweb-dev/rocket"
+        "href": "https://rocket.modern-web.dev/"
       },
       {
         "text": "WebAppWriter",
