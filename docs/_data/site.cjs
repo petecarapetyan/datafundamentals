@@ -2,12 +2,12 @@ module.exports = function () {
   return {
     dir: 'ltr',
     lang: 'en',
-    name: 'dataFundamentals',
-    description: 'dataFundamentals.com uses the not-wikipedia theme for rocket',
+    name: 'dataFundamentals.com',
+    description: 'not-wikipedia is a customizeable theme, for the Rocket SSG',
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/petecarapetyan/rocket-themes',
+        url: 'https://github.com/petecarapetyan/rocket-themes/tree/main/not-wikipedia/src/docs',
       },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/rocket-themes',
