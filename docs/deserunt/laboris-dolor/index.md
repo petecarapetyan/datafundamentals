@@ -1,4 +1,4 @@
-# Laboris dolor
+# Laboris
 
 ## ut aliqua
 
