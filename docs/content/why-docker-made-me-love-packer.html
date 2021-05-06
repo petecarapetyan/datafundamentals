@@ -1,140 +1,140 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  dir="ltr"
-  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"
->
-  <head>
+<html lang="en" dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+
+<head>
   <title>Why Docker made me love Packer | Home</title>
-  <link
-  type="text/css"
-  rel="stylesheet"
-  href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
-  media="all"
-/>
+  <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
+    media="all" />
 </head>
-<body
-role="document"
-class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- "
->
-<div class="main-container container">
-  <header role="banner" id="page-header">
-    <div class="region region-header">
-      <section id="block-block-1" class="block block-block clearfix">
-        <p>
-          <img
-            alt=""
-            src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif"
-            style="height: 42px; width: 250px"
-          /><img
-            alt=""
-            src="http://a.btrg.org/df2015/whiteBanner.jpg"
-            style="height: 42px; width: 43px"
-          /><a href="/content/dev-offerings"
-            ><img alt="" src="http://a.btrg.org/df2015/peteBanner.jpg" /></a
-          ><a href="/content/ops-offerings"
-            ><img
-              alt=""
-              src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a
-          ><a href="/content/df.lab"
-            ><img
-              alt=""
-              src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a
-          ><a href="/content/unicorn-gap"
-            ><img
-              alt=""
-              src="http://a.btrg.org/df2015/unicornGapBanner.jpg"
-              style="border-style: solid; border-width: 0px"
-          /></a>
-        </p>
-      </section>
-    </div>
-  </header>
-  <!-- /#page-header -->
 
-  <div class="row">
-    <aside class="col-sm-3" role="complementary">
-      <div class="region region-sidebar-first well">
-        <section
-          id="block-system-navigation"
-          class="block block-system block-menu clearfix"
-        >
-        <h2 class="block-title">pre2015 Content</h2>
-
-        <ul class="menu nav">
-          <li class="first leaf">
-            <a href="/content/jeff-on-ops-blog" title=""
-              >2014 Jeff on Ops Blog</a
-            >
-          </li>
-          <li class="last leaf">
-            <a href="/content/wins-and-losses" title=""
-              >Wins & Losses 2000-2014</a
-            >
-          </li>
-        </ul>
-        <h2 class="block-title">Back</h2>
-
-        <ul class="menu nav">
-          <li class="first leaf">
-            <a href="/pre2015/" title=""
-              >Back to pre2015 Home</a
-            >
-          </li>
-          <li class="last leaf">
-            <a href="/" title=""
-              >dataFundamentals.com Home</a
-            >
-          </li>
-        </ul>
+<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- ">
+  <div class="main-container container">
+    <header role="banner" id="page-header">
+      <div class="region region-header">
+        <section id="block-block-1" class="block block-block clearfix">
+          <p>
+            <img alt="" src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif"
+              style="height: 42px; width: 250px" /><img alt="" src="http://a.btrg.org/df2015/whiteBanner.jpg"
+              style="height: 42px; width: 43px" /><a href="/content/dev-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/peteBanner.jpg" /></a><a href="/content/ops-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a><a href="/content/df.lab"><img alt=""
+                src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a><a href="/content/unicorn-gap"><img alt=""
+                src="http://a.btrg.org/df2015/unicornGapBanner.jpg"
+                style="border-style: solid; border-width: 0px" /></a>
+          </p>
         </section>
       </div>
-    </aside>
+    </header>
+    <!-- /#page-header -->
 
-    <section class="col-sm-9">
-                  <a id="main-content"></a>
-                    <h1 class="page-header">Why Docker made me love Packer</h1>
-                                                        <article id="node-75" class="node node-jeff-on-ops-blog-article clearfix" about="/content/why-docker-made-me-love-packer" typeof="sioc:Item foaf:Document">
-    <header>
-            <span property="dc:title" content="Why Docker made me love Packer" class="rdf-meta element-hidden"></span>        <span class="submitted">
-        <div class="user-picture">
-    <img typeof="foaf:Image" class="img-responsive" src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg" alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />  </div>
-      <span property="dc:date dc:created" content="2015-01-30T11:54:41-06:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Fri, 01/30/2015 - 11:54</span>    </span>
-      </header>
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>I'll start out by being honest and possibly a little hurtful. I love everything that Hashicorp has been putting out, but when I first read about Packer my first thought was "<strong>Okay, so what's the point?</strong>"</p>
-<p>Unlike more senior people, I earned my baptism in the operations world exclusively through the use of config management tools like <a href="https://www.chef.io/">Chef</a> or <a href="http://www.ansible.com/home">Ansible</a>. In this world, the concept of a "golden image" is sacrilege. Your machines are supposed to be ordinary cattle, not a sacred cow. <em><strong>You should feel free to create, change, and destroy them on a whim.</strong></em> Packer appeared to be a tool focused on facilitating the creation of Golden Images. A useful tool certainly, but it supported a system that was slowly becoming obsolete. </p>
-<p>Fast forward about a year. After giving in and trying out the container craze that is surrounding Docker, I found that config management has taken an interesting twist. Rather than have a litany of VM's that can be configured and destroyed, it is now simplified into containers that can be spun up and destroyed on a whim. You could have hundreds of different containers on a single system operating independently, all built from base Docker images. At the core of these base images is the principle of <strong><em>"immutable infrastructure"</em></strong>, or images that should not be altered.</p>
-<p>Sounds a lot like another Golden Image, doesn't it?</p>
-<p>Well guess what?  It is, and it's a perfect partner to Packer. </p>
-<p><img alt="" src="http://a.btrg.org/df2015/reaction_guys.png" style="height:351px; width:120px" /></p>
-<p><em>(Oh yeah, this is the general reaction happening around Docker right now...)</em></p>
-<p>While there are plenty of questions of how to use Docker in a production setup, the big question that people are asking is how to implement the creation of containers into a continuous delivery system? How do you manage the versioning and creation of containers? How do you manage installing the data you want on the containers and pump it into your code pipeline?</p>
-<p>With Packer managing that, this would seem to be a much more simplified solution. As a build step in your cd pipeline, have <em><strong>Packer create a docker image with the newest version of your software on it,</strong></em> and push it to an artifact storage system of choice. You could setup tags to do version pinning, configure it with the base software, and it would all be done as code. at that point, the setup of a new app server is as simple as pulling down the latest image. I don't know if this system was a case of brilliant planning by Hashicorp, or simply a fortunate accident, but <strong><em>I would imagine that this will be a pattern that becomes vogue pretty shortly</em></strong>. </p>
-<p>How to set this up from end to end? Still working on that part, but I expect it will be fun.</p>
-</div></div></div>    <footer>
-    <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tag:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="../tags/packer.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">packer</a></div><div class="field-item odd"><a href="../tags/docker.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">docker</a></div><div class="field-item even"><a href="../tags/chef.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Chef</a></div><div class="field-item odd"><a href="../tags/golden-image.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">golden image</a></div><div class="field-item even"><a href="../tags/linux-container.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">linux container</a></div><div class="field-item odd"><a href="../tags/config-management.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">config management</a></div><div class="field-item even"><a href="../tags/immutable-infrastructure.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">immutable-infrastructure</a></div><div class="field-item odd"><a href="../tags/ansible.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">ansible</a></div><div class="field-item even"><a href="../tags/continuous-delivery.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">continuous delivery</a></div><div class="field-item odd"><a href="../tags/datafundamentals.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">dataFundamentals</a></div><div class="field-item even"><a href="../tags/softwareautomation.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">softwareautomation</a></div></div></div>      </footer>
-    </article>
-    </section>
+    <div class="row">
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-sidebar-first well">
+          <section id="block-system-navigation" class="block block-system block-menu clearfix">
+            <h2 class="block-title">pre2015 Content</h2>
 
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/content/jeff-on-ops-blog" title="">2014 Jeff on Ops Blog</a>
+              </li>
+              <li class="last leaf">
+                <a href="/content/wins-and-losses" title="">Wins & Losses 2000-2014</a>
+              </li>
+            </ul>
+            <h2 class="block-title">Back</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/pre2015/" title="">Back to pre2015 Home</a>
+              </li>
+              <li class="last leaf">
+                <a href="/" title="">dataFundamentals.com Home</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <section class="col-sm-9">
+        <a id="main-content"></a>
+        <h1 class="page-header">Why Docker made me love Packer</h1>
+        <article id="node-75" class="node node-jeff-on-ops-blog-article clearfix"
+          about="/content/why-docker-made-me-love-packer" typeof="sioc:Item foaf:Document">
+          <header>
+            <span property="dc:title" content="Why Docker made me love Packer" class="rdf-meta element-hidden"></span>
+            <span class="submitted">
+              <div class="user-picture">
+                <img typeof="foaf:Image" class="img-responsive"
+                  src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg"
+                  alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />
+              </div>
+              <span property="dc:date dc:created" content="2015-01-30T11:54:41-06:00" datatype="xsd:dateTime"
+                rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan"
+                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Fri, 01/30/2015 -
+                11:54</span>
+            </span>
+          </header>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even" property="content:encoded">
+                <p>I'll start out by being honest and possibly a little hurtful. I love everything that Hashicorp has
+                  been putting out, but when I first read about Packer my first thought was "<strong>Okay, so what's the
+                    point?</strong>"</p>
+                <p>Unlike more senior people, I earned my baptism in the operations world exclusively through the use of
+                  config management tools like <a href="https://www.chef.io/">Chef</a> or <a
+                    href="http://www.ansible.com/home">Ansible</a>. In this world, the concept of a "golden image" is
+                  sacrilege. Your machines are supposed to be ordinary cattle, not a sacred cow. <em><strong>You should
+                      feel free to create, change, and destroy them on a whim.</strong></em> Packer appeared to be a
+                  tool focused on facilitating the creation of Golden Images. A useful tool certainly, but it supported
+                  a system that was slowly becoming obsolete. </p>
+                <p>Fast forward about a year. After giving in and trying out the container craze that is surrounding
+                  Docker, I found that config management has taken an interesting twist. Rather than have a litany of
+                  VM's that can be configured and destroyed, it is now simplified into containers that can be spun up
+                  and destroyed on a whim. You could have hundreds of different containers on a single system operating
+                  independently, all built from base Docker images. At the core of these base images is the principle of
+                  <strong><em>"immutable infrastructure"</em></strong>, or images that should not be altered.</p>
+                <p>Sounds a lot like another Golden Image, doesn't it?</p>
+                <p>Well guess what?  It is, and it's a perfect partner to Packer. </p>
+                <p><img alt="" src="http://a.btrg.org/df2015/reaction_guys.png" style="height:351px; width:120px" /></p>
+                <p><em>(Oh yeah, this is the general reaction happening around Docker right now...)</em></p>
+                <p>While there are plenty of questions of how to use Docker in a production setup, the big question that
+                  people are asking is how to implement the creation of containers into a continuous delivery system?
+                  How do you manage the versioning and creation of containers? How do you manage installing the data you
+                  want on the containers and pump it into your code pipeline?</p>
+                <p>With Packer managing that, this would seem to be a much more simplified solution. As a build step in
+                  your cd pipeline, have <em><strong>Packer create a docker image with the newest version of your
+                      software on it,</strong></em> and push it to an artifact storage system of choice. You could setup
+                  tags to do version pinning, configure it with the base software, and it would all be done as code. at
+                  that point, the setup of a new app server is as simple as pulling down the latest image. I don't know
+                  if this system was a case of brilliant planning by Hashicorp, or simply a fortunate accident, but
+                  <strong><em>I would imagine that this will be a pattern that becomes vogue pretty
+                      shortly</em></strong>. </p>
+                <p>How to set this up from end to end? Still working on that part, but I expect it will be fun.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+    </div>
   </div>
-</div>
 
-<footer class="footer container">
-  <div class="region region-footer">
-    <section id="block-block-2" class="block block-block clearfix">
-      <hr />
-      <p class="rtecenter">
-        @devopsjeff
-        <a href="mailto:pete@datafundamentals.com"
-          >pete@datafundamentals.com</a
-        >
-        @appwritercom
-      </p>
-      <hr />
-      <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
-    </section>
-  </div>
-</footer>
-<script src="../sites/default/files/js/js_L50O_PWoAuMOxVjnzZCkNSSmI0kFwhZsO1_KS8WnGKw.js"></script>
+  <footer class="footer container">
+    <div class="region region-footer">
+      <section id="block-block-2" class="block block-block clearfix">
+        <hr />
+        <p class="rtecenter">
+          @devopsjeff
+          <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>
+          @appwritercom
+        </p>
+        <hr />
+        <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
+      </section>
+    </div>
+  </footer>
+  
 </body>
+
 </html>
