@@ -14,9 +14,6 @@ The content listed below was from a 2014 Drupal site. It was then converted to R
 
 - [5 Stages of Chef Grief](/content/5-stages-chef-grief)
 - [Hadoop Smackdown](/content/austin-jug-be-ready-smackdown)
-- [review: automateinsights](/content/automateinsights-part-1-general-overview)
-- [review: automateinsights 2](/content/automateinsights-part-2-practical-deep-dive-standalone)
-- [review: automateinsights 3](/content/automateinsights-part-3-practical-deep-dive-clustered)
 - [CASE STUDY: Advanced code generation for larger teams](/content/case-study-advanced-code-generation-and-tooling-very-large-teams)
 - [CASE STUDY: Beyond staff augmentation - frameworks & automation](/content/case-study-beyond-staff-augmentation-frameworks-and-automation)
 - [CASE STUDY: Big data ETL & automation](/content/case-study-big-data-etl-automation)
