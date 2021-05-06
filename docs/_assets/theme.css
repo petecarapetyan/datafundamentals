@@ -1,3 +1,10 @@
+
+.logo-link img {
+  width: 250px;
+  height: 42px;
+  vertical-align:auto;
+}
+
 .ga-head-main {
   display: flex;
   justify-content: space-around;
