@@ -1,158 +1,181 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<html lang="en" dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+
 <head>
-  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../sites/all/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="shortlink" href="first-thoughts-docker-and-how-it-works-chef.html" />
-<link rel="canonical" href="first-thoughts-docker-and-how-it-works-chef.html" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>First Thoughts on Docker (and how it works with Chef) | Home</title>
-  <link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_YmuMqUm--85MDg6GF8xFt60xnxOSYeKArfr5yk0-sVc.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_cRAVao--tsiCNYD0CCFUWT7kPl_o4FDNgRF_jEC9PdQ.css" media="all" />
-  <!-- HTML5 element support for IE6-8 -->
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="../sites/default/files/js/js_oCVMDTeSNt-_QxknevWyf6yO5OzmME3AhRz3ggZgNtg.js"></script>
-<script src="http://cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-<script src="../sites/default/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js"></script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-52870008-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"RD9fenosOF4IxnlfJi2xaxzZmdDfO_sn4lBPlA7RmbQ","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/js\/bootstrap.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bootstrap\/css\/3.0.2\/overrides.min.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+  <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
+    media="all" />
 </head>
-<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-62 node-type-jeff-on-ops-blog-article">
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-  </div>
-    <header id="navbar" role="banner" class="navbar container navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-              <a class="logo navbar-btn pull-left" href="../index.html" title="Home">
-          <img src="../sites/all/themes/bootstrap/logo.png" alt="Home" />
-        </a>
-      
-              <a class="name navbar-brand" href="../index.html" title="Home">Home</a>
-      
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          </div>
 
-          <div class="navbar-collapse collapse">
-        <nav role="navigation">
-                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="../jeff-on-ops-blog.html" title="">Jeff on Ops Blog</a></li>
-<li class="leaf"><a href="http://appwriter.com" title="">Pete on Dev Blog</a></li>
-<li class="last expanded dropdown"><a href="wins-and-losses.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Wins Losses <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="wins-and-losses.html" title="">Summary: Wins and Losses</a></li>
-<li class="leaf"><a href="case-study-advanced-code-generation-and-tooling-very-large-teams.html">Case Study: Advanced Code Generation and Tooling for very large teams</a></li>
-<li class="leaf"><a href="case-study-beyond-staff-augmentation-frameworks-and-automation.html">Case Study: Beyond staff augmentation - Frameworks and Automation</a></li>
-<li class="leaf"><a href="case-study-big-data-etl.html">Case Study: Big Data ETL</a></li>
-<li class="leaf"><a href="case-study-big-data-etl-automation.html">Case Study: Big Data ETL Automation</a></li>
-<li class="leaf"><a href="case-study-converting-prototype-code-base-production-code-base.html">Case Study: Converting a Prototype Code Base Into a Production Code Base</a></li>
-<li class="leaf"><a href="case-study-eating-our-own-devops-dog-food.html">Case Study: Eating Our Own Devops Dog Food</a></li>
-<li class="leaf"><a href="case-study-eclipse-based-structured-notes-app.html">Case Study: Eclipse Based Structured Notes App</a></li>
-<li class="leaf"><a href="case-study-how-improve-performance-already-brilliant-team.html">Case Study: How to Improve the Performance of An Already Brilliant Team</a></li>
-<li class="leaf"><a href="case-study-modular-java-workspace-administration.html">Case Study: Modular Java Workspace Administration</a></li>
-<li class="leaf"><a href="case-study-new-technologies-established-department.html">Case Study: New Technologies in an Established Department</a></li>
-<li class="leaf"><a href="case-study-rapid-development-custom-mission-critical-software.html">Case Study: Rapid Development of Custom, Mission Critical Software</a></li>
-<li class="leaf"><a href="case-study-setting-junior-programmer-finished-app-administer-and-maintain.html">Case Study: Setting up a junior programmer with a finished app to administer and maintain</a></li>
-<li class="leaf"><a href="case-study-starting-scratch.html">Case Study: Starting from Scratch!</a></li>
-<li class="leaf"><a href="case-study-webappwriter-helps-thousand-generate-custom-applications.html">Case Study: WebAppWriter helps thousand generate custom applications</a></li>
-<li class="last leaf"><a href="natural-limitations.html">Natural Limitations</a></li>
-</ul></li>
-</ul>                                      </nav>
-      </div>
-      </div>
-</header>
-
-<div class="main-container container">
-
-  <header role="banner" id="page-header">
-    
+<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- ">
+  <div class="main-container container">
+    <header role="banner" id="page-header">
       <div class="region region-header">
-    <section id="block-block-1" class="block block-block clearfix">
+        <section id="block-block-1" class="block block-block clearfix">
+          <p>
+            <img alt="" src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif"
+              style="height: 42px; width: 250px" /><img alt="" src="http://a.btrg.org/df2015/whiteBanner.jpg"
+              style="height: 42px; width: 43px" /><a href="/content/dev-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/peteBanner.jpg" /></a><a href="/content/ops-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a><a href="/content/df.lab"><img alt=""
+                src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a><a href="/content/unicorn-gap"><img alt=""
+                src="http://a.btrg.org/df2015/unicornGapBanner.jpg"
+                style="border-style: solid; border-width: 0px" /></a>
+          </p>
+        </section>
+      </div>
+    </header>
+    <!-- /#page-header -->
 
-      
-  <p><img alt="" src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif" style="height:42px; width:250px" /><img alt="" src="http://a.btrg.org/df2015/whiteBanner.jpg" style="height:42px; width:43px" /><a href="../dev-offerings.html"><img alt="" src="http://a.btrg.org/df2015/peteBanner.jpg" /></a><a href="../ops-offerings.html"><img alt="" src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a><a href="../df.lab.html"><img alt="" src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a><a href="../unicorn-gap.html"><img alt="" src="http://a.btrg.org/df2015/unicornGapBanner.jpg" style="border-style:solid; border-width:0px" /></a></p>
+    <div class="row">
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-sidebar-first well">
+          <section id="block-system-navigation" class="block block-system block-menu clearfix">
+            <h2 class="block-title">pre2015 Content</h2>
 
-</section>
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/content/jeff-on-ops-blog" title="">2014 Jeff on Ops Blog</a>
+              </li>
+              <li class="last leaf">
+                <a href="/content/wins-and-losses" title="">Wins & Losses 2000-2014</a>
+              </li>
+            </ul>
+            <h2 class="block-title">Back</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/pre2015/" title="">Back to pre2015 Home</a>
+              </li>
+              <li class="last leaf">
+                <a href="/" title="">dataFundamentals.com Home</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <section class="col-sm-9">
+        <a id="main-content"></a>
+        <h1 class="page-header">First Thoughts on Docker (and how it works with Chef)</h1>
+        <article id="node-62" class="node node-jeff-on-ops-blog-article clearfix"
+          about="/content/first-thoughts-docker-and-how-it-works-chef" typeof="sioc:Item foaf:Document">
+          <header>
+            <span property="dc:title" content="First Thoughts on Docker (and how it works with Chef)"
+              class="rdf-meta element-hidden"></span> <span class="submitted">
+              <div class="user-picture">
+                <img typeof="foaf:Image" class="img-responsive"
+                  src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg"
+                  alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />
+              </div>
+              <span property="dc:date dc:created" content="2015-01-14T12:48:23-06:00" datatype="xsd:dateTime"
+                rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan"
+                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Wed, 01/14/2015 -
+                12:48</span>
+            </span>
+          </header>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even" property="content:encoded">
+                <p>While some of you have been more rapid in your acclimation and introduction with Docker, I have been
+                  taking a cautionary, slow approach to using it. After all, I have focused a lot of my time on
+                  mastering Chef, so abandoning that to learn Docker seemed like a waste of previous effort. My solution
+                  was to simply make sure that I learned Docker from a Chef users standpoint. These are some of my
+                  immediate takeaways. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>The Docker community cookbook is an excellent
+                        tool.</strong></span> </li>
+                </ul>
+                <p>Overall, I have denounced community cookbooks as overly complicated bits of spaghetti code for the
+                  novice, and I still stand by that statement. However when I gave it an initial shot I found incredibly
+                  easy to use. There are built in resources for downloading images, creating containers, and all of them
+                  have highly usable attributes for almost all the docker subcommands. I originally started with Ansible
+                  to install Docker thinking it would be easier, and it is simply not the case. The community cookbook
+                  is a good tool that will tie into your existing code setup.</p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>Using the cookbook is not a substitute for understanding
+                        Docker</strong></span></li>
+                </ul>
+                <p>This falls more in line with my normal community cookbook thinking. While Docker is a relatively
+                  shallow API, it is still an alien concept to traditional config management, and there is a learning
+                  curve to undersanding the underlying principles of LXC containers. You would be wise to get a solid
+                  grasp of Docker and linux containers before trying to implement them with Chef. Some key concepts
+                  include<br />
+                  - VM host vs. docker image vs. Docker containers<br />
+                  - How to effectively run multiple containers on the same system. <br />
+                  - Volume Mounting to efffectively use external data on containers. <br />
+                  - Effective use of container tagging for management.<br />
+                  - Dockerfiles, and their importance on building custom images. </p>
+                <p>The Docker documentation is pretty extensive on the home page and is a good reference tool for that,
+                  so I will skip rehashing it.</p>
+                <ul>
+                  <li><strong><span style="font-size:14px">Once you have the basics, the Docker cookbook is a helpful
+                        tool.</span></strong></li>
+                </ul>
+                <p>This is more opinion than fact. I found that after grasping the basics of Docker, using the LWRP
+                  attributes for containers made it much easier to learn the subcommands required to effectively use
+                  linux containers. Secondly, having it as more human readable code made it much easier than long
+                  command line entries. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>There are some things the Docker cookbook can't
+                        do.</strong></span> </li>
+                </ul>
+                <p>Okay, I'll rephrase this slightly. There aren't many things it can't do, in fact there was only one
+                  that really bothered me. That is the inability to setup persistent data containers for setting up
+                  clusters which require that. This is more related to. </p>
+                <ol>
+                  <li>Persistent data containers are not the current standard practice (not best practice)</li>
+                  <li>Everybody that is all about Docker is ignoring the elephant in the room of the data problem.</li>
+                </ol>
+                <p>This will likely be a problem fixed when a best practice is adopted with container data management,
+                  but for now it remains a problem for you and homemade bash scripts. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>In summary, stick with the Docker cookbook for
+                        now</strong>. </span></li>
+                </ul>
+                <p>Another biased opinion. If you are a relative Docker and Chef novice, stick with the community
+                  cookbook only starting off! I have read some of the things involving knife-container and how to use
+                  your existing cookbooks to adjust run-state of containers, but it is not for the faint of heart. Stick
+                  with the basics, and when you are comfortable build on it from there. </p>
+                <p>Keep calm, and Chef/Docker on.</p>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
+              <div class="field-label">Tag:&nbsp;</div>
+              <div class="field-items">
+                <div class="field-item even"><a href="../tags/docker.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">docker</a></div>
+                <div class="field-item odd"><a href="../tags/chef.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">Chef</a></div>
+                <div class="field-item even"><a href="../tags/community-cookbook.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">community cookbook</a></div>
+              </div>
+            </div>
+          </footer>
+        </article>
+      </section>
+
+    </div>
   </div>
-  </header> <!-- /#page-header -->
-
-  <div class="row">
-
-          <aside class="col-sm-3" role="complementary">
-          <div class="region region-sidebar-first well">
-    <section id="block-system-navigation" class="block block-system block-menu clearfix">
-
-        <h2 class="block-title">Contents</h2>
-    
-  <ul class="menu nav"><li class="first leaf"><a href="../jeff-on-ops-blog.html" title="">Jeff on Ops Blog</a></li>
-<li class="last leaf"><a href="wins-and-losses.html" title="">Wins and Losses</a></li>
-</ul>
-</section>
-  </div>
-      </aside>  <!-- /#sidebar-first -->
-    
-    <section class="col-sm-9">
-                  <a id="main-content"></a>
-                    <h1 class="page-header">First Thoughts on Docker (and how it works with Chef)</h1>
-                                                        <article id="node-62" class="node node-jeff-on-ops-blog-article clearfix" about="/content/first-thoughts-docker-and-how-it-works-chef" typeof="sioc:Item foaf:Document">
-    <header>
-            <span property="dc:title" content="First Thoughts on Docker (and how it works with Chef)" class="rdf-meta element-hidden"></span>        <span class="submitted">
-        <div class="user-picture">
-    <img typeof="foaf:Image" class="img-responsive" src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg" alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />  </div>
-      <span property="dc:date dc:created" content="2015-01-14T12:48:23-06:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Wed, 01/14/2015 - 12:48</span>    </span>
-      </header>
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>While some of you have been more rapid in your acclimation and introduction with Docker, I have been taking a cautionary, slow approach to using it. After all, I have focused a lot of my time on mastering Chef, so abandoning that to learn Docker seemed like a waste of previous effort. My solution was to simply make sure that I learned Docker from a Chef users standpoint. These are some of my immediate takeaways. </p>
-<ul><li><span style="font-size:14px"><strong>The Docker community cookbook is an excellent tool.</strong></span> </li>
-</ul><p>Overall, I have denounced community cookbooks as overly complicated bits of spaghetti code for the novice, and I still stand by that statement. However when I gave it an initial shot I found incredibly easy to use. There are built in resources for downloading images, creating containers, and all of them have highly usable attributes for almost all the docker subcommands. I originally started with Ansible to install Docker thinking it would be easier, and it is simply not the case. The community cookbook is a good tool that will tie into your existing code setup.</p>
-<ul><li><span style="font-size:14px"><strong>Using the cookbook is not a substitute for understanding Docker</strong></span></li>
-</ul><p>This falls more in line with my normal community cookbook thinking. While Docker is a relatively shallow API, it is still an alien concept to traditional config management, and there is a learning curve to undersanding the underlying principles of LXC containers. You would be wise to get a solid grasp of Docker and linux containers before trying to implement them with Chef. Some key concepts include<br />
-- VM host vs. docker image vs. Docker containers<br />
-- How to effectively run multiple containers on the same system. <br />
-- Volume Mounting to efffectively use external data on containers. <br />
-- Effective use of container tagging for management.<br />
-- Dockerfiles, and their importance on building custom images. </p>
-<p>The Docker documentation is pretty extensive on the home page and is a good reference tool for that, so I will skip rehashing it.</p>
-<ul><li><strong><span style="font-size:14px">Once you have the basics, the Docker cookbook is a helpful tool.</span></strong></li>
-</ul><p>This is more opinion than fact. I found that after grasping the basics of Docker, using the LWRP attributes for containers made it much easier to learn the subcommands required to effectively use linux containers. Secondly, having it as more human readable code made it much easier than long command line entries. </p>
-<ul><li><span style="font-size:14px"><strong>There are some things the Docker cookbook can't do.</strong></span> </li>
-</ul><p>Okay, I'll rephrase this slightly. There aren't many things it can't do, in fact there was only one that really bothered me. That is the inability to setup persistent data containers for setting up clusters which require that. This is more related to. </p>
-<ol><li>Persistent data containers are not the current standard practice (not best practice)</li>
-<li>Everybody that is all about Docker is ignoring the elephant in the room of the data problem.</li>
-</ol><p>This will likely be a problem fixed when a best practice is adopted with container data management, but for now it remains a problem for you and homemade bash scripts. </p>
-<ul><li><span style="font-size:14px"><strong>In summary, stick with the Docker cookbook for now</strong>. </span></li>
-</ul><p>Another biased opinion. If you are a relative Docker and Chef novice, stick with the community cookbook only starting off! I have read some of the things involving knife-container and how to use your existing cookbooks to adjust run-state of containers, but it is not for the faint of heart. Stick with the basics, and when you are comfortable build on it from there. </p>
-<p>Keep calm, and Chef/Docker on.</p>
-</div></div></div>    <footer>
-    <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tag:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="../tags/docker.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">docker</a></div><div class="field-item odd"><a href="../tags/chef.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Chef</a></div><div class="field-item even"><a href="../tags/community-cookbook.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">community cookbook</a></div></div></div>      </footer>
-    </article>
-    </section>
-
-    
-  </div>
-</div>
 
   <footer class="footer container">
-      <div class="region region-footer">
-    <section id="block-block-2" class="block block-block clearfix">
-
-      
-  <p>We are technical guys, not copywriters or designers. <span style="color:#FF0000"><em><strong>Please feel free to offer any feeback we need re: this site!</strong></em>  </span>It might make a big difference. And <em>Thanks!</em></p>
-<hr /><p class="rtecenter"><a href="mailto:jeff@datafundamentals.com">jeff@datafundamentals.com</a>         @devopsjeff       <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>      @appwritercom</p>
-<hr /><p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
-
-</section>
-  </div>
+    <div class="region region-footer">
+      <section id="block-block-2" class="block block-block clearfix">
+        <hr />
+        <p class="rtecenter">
+          @devopsjeff
+          <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>
+          @appwritercom
+        </p>
+        <hr />
+        <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
+      </section>
+    </div>
   </footer>
   <script src="../sites/default/files/js/js_L50O_PWoAuMOxVjnzZCkNSSmI0kFwhZsO1_KS8WnGKw.js"></script>
 </body>
+
 </html>

@@ -1,142 +1,131 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<html lang="en" dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+
 <head>
-  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../sites/all/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="shortlink" href="docker-and-packer-playing-nice-part-1.html" />
-<link rel="canonical" href="docker-and-packer-playing-nice-part-1.html" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>Docker and Packer playing nice: Part 1 | Home</title>
-  <link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_YmuMqUm--85MDg6GF8xFt60xnxOSYeKArfr5yk0-sVc.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_cRAVao--tsiCNYD0CCFUWT7kPl_o4FDNgRF_jEC9PdQ.css" media="all" />
-  <!-- HTML5 element support for IE6-8 -->
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="../sites/default/files/js/js_oCVMDTeSNt-_QxknevWyf6yO5OzmME3AhRz3ggZgNtg.js"></script>
-<script src="http://cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-<script src="../sites/default/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js"></script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-52870008-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"uTIHlYQ9t4qAEgwIHBmHgmkbQQdl0M0AqFjswDKwpTM","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/js\/bootstrap.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bootstrap\/css\/3.0.2\/overrides.min.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+  <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
+    media="all" />
 </head>
-<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-77 node-type-jeff-on-ops-blog-article">
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-  </div>
-    <header id="navbar" role="banner" class="navbar container navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-              <a class="logo navbar-btn pull-left" href="../index.html" title="Home">
-          <img src="../sites/all/themes/bootstrap/logo.png" alt="Home" />
-        </a>
-      
-              <a class="name navbar-brand" href="../index.html" title="Home">Home</a>
-      
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          </div>
 
-          <div class="navbar-collapse collapse">
-        <nav role="navigation">
-                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="../jeff-on-ops-blog.html" title="">Jeff on Ops Blog</a></li>
-<li class="leaf"><a href="http://appwriter.com" title="">Pete on Dev Blog</a></li>
-<li class="last expanded dropdown"><a href="wins-and-losses.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Wins Losses <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="wins-and-losses.html" title="">Summary: Wins and Losses</a></li>
-<li class="leaf"><a href="case-study-advanced-code-generation-and-tooling-very-large-teams.html">Case Study: Advanced Code Generation and Tooling for very large teams</a></li>
-<li class="leaf"><a href="case-study-beyond-staff-augmentation-frameworks-and-automation.html">Case Study: Beyond staff augmentation - Frameworks and Automation</a></li>
-<li class="leaf"><a href="case-study-big-data-etl.html">Case Study: Big Data ETL</a></li>
-<li class="leaf"><a href="case-study-big-data-etl-automation.html">Case Study: Big Data ETL Automation</a></li>
-<li class="leaf"><a href="case-study-converting-prototype-code-base-production-code-base.html">Case Study: Converting a Prototype Code Base Into a Production Code Base</a></li>
-<li class="leaf"><a href="case-study-eating-our-own-devops-dog-food.html">Case Study: Eating Our Own Devops Dog Food</a></li>
-<li class="leaf"><a href="case-study-eclipse-based-structured-notes-app.html">Case Study: Eclipse Based Structured Notes App</a></li>
-<li class="leaf"><a href="case-study-how-improve-performance-already-brilliant-team.html">Case Study: How to Improve the Performance of An Already Brilliant Team</a></li>
-<li class="leaf"><a href="case-study-modular-java-workspace-administration.html">Case Study: Modular Java Workspace Administration</a></li>
-<li class="leaf"><a href="case-study-new-technologies-established-department.html">Case Study: New Technologies in an Established Department</a></li>
-<li class="leaf"><a href="case-study-rapid-development-custom-mission-critical-software.html">Case Study: Rapid Development of Custom, Mission Critical Software</a></li>
-<li class="leaf"><a href="case-study-setting-junior-programmer-finished-app-administer-and-maintain.html">Case Study: Setting up a junior programmer with a finished app to administer and maintain</a></li>
-<li class="leaf"><a href="case-study-starting-scratch.html">Case Study: Starting from Scratch!</a></li>
-<li class="leaf"><a href="case-study-webappwriter-helps-thousand-generate-custom-applications.html">Case Study: WebAppWriter helps thousand generate custom applications</a></li>
-<li class="last leaf"><a href="natural-limitations.html">Natural Limitations</a></li>
-</ul></li>
-</ul>                                      </nav>
-      </div>
-      </div>
-</header>
-
-<div class="main-container container">
-
-  <header role="banner" id="page-header">
-    
+<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- ">
+  <div class="main-container container">
+    <header role="banner" id="page-header">
       <div class="region region-header">
-    <section id="block-block-1" class="block block-block clearfix">
+        <section id="block-block-1" class="block block-block clearfix">
+          <p>
+            <img alt="" src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif"
+              style="height: 42px; width: 250px" /><img alt="" src="http://a.btrg.org/df2015/whiteBanner.jpg"
+              style="height: 42px; width: 43px" /><a href="/content/dev-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/peteBanner.jpg" /></a><a href="/content/ops-offerings"><img alt=""
+                src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a><a href="/content/df.lab"><img alt=""
+                src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a><a href="/content/unicorn-gap"><img alt=""
+                src="http://a.btrg.org/df2015/unicornGapBanner.jpg"
+                style="border-style: solid; border-width: 0px" /></a>
+          </p>
+        </section>
+      </div>
+    </header>
+    <!-- /#page-header -->
 
-      
-  <p><img alt="" src="http://a.btrg.org/00datafundamentals.com/datafundamentals250simplici.gif" style="height:42px; width:250px" /><img alt="" src="http://a.btrg.org/df2015/whiteBanner.jpg" style="height:42px; width:43px" /><a href="../dev-offerings.html"><img alt="" src="http://a.btrg.org/df2015/peteBanner.jpg" /></a><a href="../ops-offerings.html"><img alt="" src="http://a.btrg.org/df2015/opsJeffBanner.jpg" /></a><a href="../df.lab.html"><img alt="" src="http://a.btrg.org/df2015/scienceBanner.jpg" /></a><a href="../unicorn-gap.html"><img alt="" src="http://a.btrg.org/df2015/unicornGapBanner.jpg" style="border-style:solid; border-width:0px" /></a></p>
+    <div class="row">
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-sidebar-first well">
+          <section id="block-system-navigation" class="block block-system block-menu clearfix">
+            <h2 class="block-title">pre2015 Content</h2>
 
-</section>
-  </div>
-  </header> <!-- /#page-header -->
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/content/jeff-on-ops-blog" title="">2014 Jeff on Ops Blog</a>
+              </li>
+              <li class="last leaf">
+                <a href="/content/wins-and-losses" title="">Wins & Losses 2000-2014</a>
+              </li>
+            </ul>
+            <h2 class="block-title">Back</h2>
 
-  <div class="row">
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/pre2015/" title="">Back to pre2015 Home</a>
+              </li>
+              <li class="last leaf">
+                <a href="/" title="">dataFundamentals.com Home</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
 
-          <aside class="col-sm-3" role="complementary">
-          <div class="region region-sidebar-first well">
-    <section id="block-system-navigation" class="block block-system block-menu clearfix">
-
-        <h2 class="block-title">Contents</h2>
-    
-  <ul class="menu nav"><li class="first leaf"><a href="../jeff-on-ops-blog.html" title="">Jeff on Ops Blog</a></li>
-<li class="last leaf"><a href="wins-and-losses.html" title="">Wins and Losses</a></li>
-</ul>
-</section>
-  </div>
-      </aside>  <!-- /#sidebar-first -->
-    
-    <section class="col-sm-9">
-                  <a id="main-content"></a>
-                    <h1 class="page-header">Docker and Packer playing nice: Part 1</h1>
-                                                        <article id="node-77" class="node node-jeff-on-ops-blog-article clearfix" about="/content/docker-and-packer-playing-nice-part-1" typeof="sioc:Item foaf:Document">
-    <header>
-            <span property="dc:title" content="Docker and Packer playing nice: Part 1" class="rdf-meta element-hidden"></span>        <span class="submitted">
-        <div class="user-picture">
-    <img typeof="foaf:Image" class="img-responsive" src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg" alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />  </div>
-      <span property="dc:date dc:created" content="2015-02-03T10:39:19-06:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Tue, 02/03/2015 - 10:39</span>    </span>
-      </header>
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>I recently mouthed off about the benefit of using <a href="why-docker-made-me-love-packer.html">Docker and Packer</a> together, so I thought I would actually show a quick proof of concept on how this would all work. This is a first step and not an end to end continuous delivery setup with Packer and Docker, but it is a good first step on the journey. </p>
-<p>TL;DR section, just look at the cookbook on <a href="https://github.com/datafundamentals/df_box_packer_4_docker">github</a></p>
-<p>So these will be the project pieces</p>
-<ul><li>Ubuntu 14.04</li>
-<li>Docker</li>
-<li>Packer</li>
-<li>Packer Template files</li>
-</ul><p><strong>PROBLEM</strong>: If this is a simple POC, why aren't you running it on your own mac?<br /><strong>SOLUTION</strong>: It's a not easy on a mac, and a POC is supposed to run easily.</p>
-<p>People more intimately familiar with Docker know it's designed to run natively on linux, but not MacOSX (what most devs/ops use). Therefore, Docker built a proxyVM called boot2docker for Macs that allows you to boot up containers locally. This works for running base containers with Dockerfiles and your terminal, but doesn't play nice with Packer currently. So we simply set up a local linux VM with Vagrant, and configure it with Chef. </p>
-<p>the Organization for the cookbooks is pretty straightforward. </p>
-<ul><li>Role Cookbook for holding application cookbooks and custom data
-<ul><li>docker cookbook (community)</li>
-<li>df_packer cookbook (code by DevOps Jeff)</li>
-<li>POC box specific configuration (in role cookbook)</li>
-</ul></li>
-</ul><p>This is what the run_list looks like for the base installation</p>
-<pre><code>
+      <section class="col-sm-9">
+        <a id="main-content"></a>
+        <h1 class="page-header">Docker and Packer playing nice: Part 1</h1>
+        <article id="node-77" class="node node-jeff-on-ops-blog-article clearfix"
+          about="/content/docker-and-packer-playing-nice-part-1" typeof="sioc:Item foaf:Document">
+          <header>
+            <span property="dc:title" content="Docker and Packer playing nice: Part 1"
+              class="rdf-meta element-hidden"></span> <span class="submitted">
+              <div class="user-picture">
+                <img typeof="foaf:Image" class="img-responsive"
+                  src="../sites/default/files/styles/thumbnail/public/pictures/picture-11-1400705926-itok=KFQI6U-7.jpg"
+                  alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />
+              </div>
+              <span property="dc:date dc:created" content="2015-02-03T10:39:19-06:00" datatype="xsd:dateTime"
+                rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan"
+                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Tue, 02/03/2015 -
+                10:39</span>
+            </span>
+          </header>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even" property="content:encoded">
+                <p>I recently mouthed off about the benefit of using <a
+                    href="why-docker-made-me-love-packer.html">Docker and Packer</a> together, so I thought I would
+                  actually show a quick proof of concept on how this would all work. This is a first step and not an end
+                  to end continuous delivery setup with Packer and Docker, but it is a good first step on the journey. 
+                </p>
+                <p>TL;DR section, just look at the cookbook on <a
+                    href="https://github.com/datafundamentals/df_box_packer_4_docker">github</a></p>
+                <p>So these will be the project pieces</p>
+                <ul>
+                  <li>Ubuntu 14.04</li>
+                  <li>Docker</li>
+                  <li>Packer</li>
+                  <li>Packer Template files</li>
+                </ul>
+                <p><strong>PROBLEM</strong>: If this is a simple POC, why aren't you running it on your own
+                  mac?<br /><strong>SOLUTION</strong>: It's a not easy on a mac, and a POC is supposed to run easily.
+                </p>
+                <p>People more intimately familiar with Docker know it's designed to run natively on linux, but not
+                  MacOSX (what most devs/ops use). Therefore, Docker built a proxyVM called boot2docker for Macs that
+                  allows you to boot up containers locally. This works for running base containers with Dockerfiles and
+                  your terminal, but doesn't play nice with Packer currently. So we simply set up a local linux VM with
+                  Vagrant, and configure it with Chef. </p>
+                <p>the Organization for the cookbooks is pretty straightforward. </p>
+                <ul>
+                  <li>Role Cookbook for holding application cookbooks and custom data
+                    <ul>
+                      <li>docker cookbook (community)</li>
+                      <li>df_packer cookbook (code by DevOps Jeff)</li>
+                      <li>POC box specific configuration (in role cookbook)</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>This is what the run_list looks like for the base installation</p>
+                <pre><code>
 include_recipe "df_packer::default"
 include_recipe "docker"
-</code></pre><p>(<em>Don't forget to include your dependencies in your Berksfile and metadata.rb)</em></p>
-<p><strong>IMPORTANT: </strong>There is a bug with the latest version of Docker working with Packer, so you will need to use a slightly older version of Docker. This can be done by setting an override attribute in the role cookbook</p>
-<pre>
+</code></pre>
+                <p>(<em>Don't forget to include your dependencies in your Berksfile and metadata.rb)</em></p>
+                <p><strong>IMPORTANT: </strong>There is a bug with the latest version of Docker working with Packer, so
+                  you will need to use a slightly older version of Docker. This can be done by setting an override
+                  attribute in the role cookbook</p>
+                <pre>
 override['docker']['version'] = "1.3.3"
-</pre><p>Once you get get packer and docker built into your run_list (example), lets set up a directory for the packer templates and create a template.json. <br />
- </p>
-<pre>
+</pre>
+                <p>Once you get get packer and docker built into your run_list (example), lets set up a directory for
+                  the packer templates and create a template.json. <br />
+                   </p>
+                <pre>
 directory "/home/vagrant/packer_test" do
 	recursive true
 	action :create
@@ -148,10 +137,14 @@ template "/home/vagrant/packer_test/template.json" do
 	mode "0777"
 	action :create
 end
-</pre><p> </p>
-<p>The core piece to getting packer to work is using template files . Written in JSON, I think that this is an incredibly easy to read format for defining your builds. The most important being the builder block. As you would have guessed, It is the block where you describe that you want a docker image made. There are other pieces to consider, but for now this is all we need to know. </p>
-<p> </p>
-<pre>
+</pre>
+                <p> </p>
+                <p>The core piece to getting packer to work is using template files . Written in JSON, I think that this
+                  is an incredibly easy to read format for defining your builds. The most important being the builder
+                  block. As you would have guessed, It is the block where you describe that you want a docker image
+                  made. There are other pieces to consider, but for now this is all we need to know. </p>
+                <p> </p>
+                <pre>
 {
 	"builders": [
 	{
@@ -160,34 +153,62 @@ end
 		"export_path": "image.tar"
 		}]
 }
-</pre><p>This template specifies</p>
-<ul><li>Docker is our builder</li>
-<li>we are using the tutum/tomcat image as a base, which is found on the community Dockerhub registry</li>
-<li>Once it is built we are going to wrap the image in a tarball file for exporting.</li>
-</ul><p>In order for it to run you just need to run &lt;packer build template.json&gt; in the directory where the template is installed, and Packer will take care of the rest. </p>
-<p>So there you have it. You have used Packer to build a Docker image. This is as basic as it gets. For those of use who have to do more advanced configuration, we will work on that in part two. </p>
-<p> </p>
-</div></div></div>    <footer>
-    <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tag:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="../tags/docker.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">docker</a></div><div class="field-item odd"><a href="../tags/packer.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">packer</a></div><div class="field-item even"><a href="../tags/chef.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Chef</a></div><div class="field-item odd"><a href="../tags/vagrant.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">vagrant</a></div><div class="field-item even"><a href="../tags/softwareautomation.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">softwareautomation</a></div><div class="field-item odd"><a href="../tags/datafundamentals.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">dataFundamentals</a></div></div></div>      </footer>
-    </article>
-    </section>
+</pre>
+                <p>This template specifies</p>
+                <ul>
+                  <li>Docker is our builder</li>
+                  <li>we are using the tutum/tomcat image as a base, which is found on the community Dockerhub registry
+                  </li>
+                  <li>Once it is built we are going to wrap the image in a tarball file for exporting.</li>
+                </ul>
+                <p>In order for it to run you just need to run &lt;packer build template.json&gt; in the directory where
+                  the template is installed, and Packer will take care of the rest. </p>
+                <p>So there you have it. You have used Packer to build a Docker image. This is as basic as it gets. For
+                  those of use who have to do more advanced configuration, we will work on that in part two. </p>
+                <p> </p>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
+              <div class="field-label">Tag:&nbsp;</div>
+              <div class="field-items">
+                <div class="field-item even"><a href="../tags/docker.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">docker</a></div>
+                <div class="field-item odd"><a href="../tags/packer.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">packer</a></div>
+                <div class="field-item even"><a href="../tags/chef.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">Chef</a></div>
+                <div class="field-item odd"><a href="../tags/vagrant.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">vagrant</a></div>
+                <div class="field-item even"><a href="../tags/softwareautomation.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">softwareautomation</a></div>
+                <div class="field-item odd"><a href="../tags/datafundamentals.html" typeof="skos:Concept"
+                    property="rdfs:label skos:prefLabel" datatype="">dataFundamentals</a></div>
+              </div>
+            </div>
+          </footer>
+        </article>
+      </section>
 
-    
+    </div>
   </div>
-</div>
 
   <footer class="footer container">
-      <div class="region region-footer">
-    <section id="block-block-2" class="block block-block clearfix">
-
-      
-  <p>We are technical guys, not copywriters or designers. <span style="color:#FF0000"><em><strong>Please feel free to offer any feeback we need re: this site!</strong></em>  </span>It might make a big difference. And <em>Thanks!</em></p>
-<hr /><p class="rtecenter"><a href="mailto:jeff@datafundamentals.com">jeff@datafundamentals.com</a>         @devopsjeff       <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>      @appwritercom</p>
-<hr /><p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
-
-</section>
-  </div>
+    <div class="region region-footer">
+      <section id="block-block-2" class="block block-block clearfix">
+        <hr />
+        <p class="rtecenter">
+          @devopsjeff
+          <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>
+          @appwritercom
+        </p>
+        <hr />
+        <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
+      </section>
+    </div>
   </footer>
   <script src="../sites/default/files/js/js_L50O_PWoAuMOxVjnzZCkNSSmI0kFwhZsO1_KS8WnGKw.js"></script>
 </body>
+
 </html>
