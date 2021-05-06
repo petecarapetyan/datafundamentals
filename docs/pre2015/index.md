@@ -34,7 +34,7 @@ The content listed below was from a 2014 Drupal site. It was then converted to R
 - [WAW](/content/case-study-webappwriter-helps-thousand-generate-custom-applications)
 - [community](/content/chef-community-cookbook-issues)
 - [super](/content/chef-supermarket-first-look)
-- [link](/content/chef-there-wrong-time-use-it)
+- [there](/content/chef-there-wrong-time-use-it)
 - [link](/content/chef-top-10-ways-get-help)
 - [link](/content/chef-why-are-gem-conflicts-so-hard)
 - [link](/content/chef-why-even-write-tests)
