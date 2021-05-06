@@ -32,7 +32,7 @@ The content listed below was from a 2014 Drupal site. It was then converted to R
 - [setting](/content/case-study-setting-junior-programmer-finished-app-administer-and-maintain)
 - [starting](/content/case-study-starting-scratch)
 - [WAW](/content/case-study-webappwriter-helps-thousand-generate-custom-applications)
-- [link](/content/chef-community-cookbook-issues)
+- [community](/content/chef-community-cookbook-issues)
 - [link](/content/chef-supermarket-first-look)
 - [link](/content/chef-there-wrong-time-use-it)
 - [link](/content/chef-top-10-ways-get-help)
