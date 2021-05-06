@@ -28,7 +28,7 @@ The content listed below was from a 2014 Drupal site. It was then converted to R
 - [improve](/content/case-study-how-improve-performance-already-brilliant-team)
 - [modular](/content/case-study-modular-java-workspace-administration)
 - [new](/content/case-study-new-technologies-established-department)
-- [link](/content/case-study-rapid-development-custom-mission-critical-software)
+- [rapid](/content/case-study-rapid-development-custom-mission-critical-software)
 - [link](/content/case-study-setting-junior-programmer-finished-app-administer-and-maintain)
 - [link](/content/case-study-starting-scratch)
 - [link](/content/case-study-webappwriter-helps-thousand-generate-custom-applications)
