@@ -1,11 +1,13 @@
-# 2014
+# pre-2015
 
-This is old content from a previous iteration of a datafundamentals, written in a drupal site, migrated in 2021
+Welcome to dataFundamentals 2014 and previous years, back to it's origin in 2000!
+
+The content listed below was from a 2014 Drupal site. It was then converted to Rocket SSG in May 2021
 
 - [df.lab](/content/df.lab)
-- [jeff-on-ops1](/content/jeff-on-ops-blog)
-- [jeff-on-ops2](/content/jeff-on-ops-blog-page=1)
-- [jeff-on-ops3](/content/jeff-on-ops-blog-page=2)
+- [jeff-on-ops page 1of3](/content/jeff-on-ops-blog)
+- [jeff-on-ops page 2of3](/content/jeff-on-ops-blog-page=1)
+- [jeff-on-ops page 3of3](/content/jeff-on-ops-blog-page=2)
 - [dev offerings](/content/dev-offerings)
 - [ops offerings](/content/ops-offerings)
 - [dev offerings](/content/unicorn-gap)
@@ -15,7 +17,7 @@ This is old content from a previous iteration of a datafundamentals, written in 
 - [review: automateinsights](/content/automateinsights-part-1-general-overview)
 - [review: automateinsights 2](/content/automateinsights-part-2-practical-deep-dive-standalone)
 - [review: automateinsights 3](/content/automateinsights-part-3-practical-deep-dive-clustered)
-- [link](/content/case-study-advanced-code-generation-and-tooling-very-large-teams)
+- [CASE STUDY: Advanced code generation for larger teams](/content/case-study-advanced-code-generation-and-tooling-very-large-teams)
 - [link](/content/case-study-beyond-staff-augmentation-frameworks-and-automation)
 - [link](/content/case-study-big-data-etl-automation)
 - [link](/content/case-study-big-data-etl)
