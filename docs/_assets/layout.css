@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -342,6 +341,7 @@ li.current > ul > li.anchor {
     top: 70px;
     overflow-y: auto;
     scroll-behavior: smooth;
+    min-width: 270px;
     z-index: 10;
     margin-right: 50px;
   }
