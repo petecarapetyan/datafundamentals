@@ -3,11 +3,23 @@ module.exports = function () {
     dir: 'ltr',
     lang: 'en',
     name: 'dataFundamentals.com',
-    description: 'appWriter is an inbetween site - half demo of the not-wikipedia theme, other half emerging restoration of previous site',
+    description: 'This is a demo site for both non-axios theme & a Drupal migration',
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/petecarapetyan/fins-rocket-themes/tree/main/not-wikipedia/src/docs',
+        url: 'https://github.com/petecarapetyan/fins-rocket-themes/tree/main/not-axios/src/docs',
+      },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/appwritercom',
+      },
+      {
+        name: 'Youtube',
+        url: 'https://www.youtube.com/channel/UCDXcfvbtHigu3o81rDq1YJw',
+      },
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/pete-carapetyan-b3a39b/',
       },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/fins-rocket-themes',
