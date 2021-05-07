@@ -21,6 +21,10 @@ module.exports = function () {
         name: 'Linkedin',
         url: 'https://www.linkedin.com/in/pete-carapetyan-b3a39b/',
       },
+      {
+        name: 'Strava',
+        url: 'https://www.strava.com/athletes/2901957',
+      },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/fins-rocket-themes',
     gitBranch: 'main',
