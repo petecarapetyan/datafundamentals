@@ -4,18 +4,14 @@ layout: layout-home
 ---
 <hr>
 
-# 20 years bringing apps into the world
-
-Hi! 
+# 20 years of bringing apps into the world
 
 My name is Pete Carapetyan.
 
-A lot has change in the 20 years since first published to this domain.
+dataFundamentals has been my brand name for contracting to the corporate world since Jan 1, 2000
 
-One thing hasn't. I'm still bringing apps into the world, and those apps are still employing the latest tech standards.
+A lot has change in the 20 years since first published a site to this domain. This is probably the 4th major iteration? I don't even know.
 
-A dubious distinction, but is what it is.
+One thing hasn't changed. I'm still bringing apps into the world, and those apps are still employing the latest technology standards.
 
-## A Lorem Ipsum site
-
-Some of this site is a Lorem Ipsum site. Just fluff content to exercise the theme.
+This site is written in [rocket](https://rocket.modern-web.dev/) with a theme by yours truly.
