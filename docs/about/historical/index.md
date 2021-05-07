@@ -24,7 +24,7 @@ If you're still working with custom-built and self maintained Back Ends:
 
 ## Q: Since when did you acquire Front End skills?
 
-- Technically, I've also been doing front ends since 2000, that's just never been my "occupation" until recent years.
+- Technically, I've also been doing front ends since my first 5 user TRS-80 green screen system in 1985, that's just never been my "occupation" until recent years.
 - My first formal javascript app was in 2014
 - Since then I've probably logged 42 months of javascript apps, most of it in Google's Polymer/Lit stacks, but also some React.
 
@@ -34,4 +34,4 @@ Sigh. Depends on who you compare me to. I'm definitely producing good, solid wor
 
 The guys I run with are still faster/smarter/younger than I am. But I'm holding up OK under the pressure. And if I'm not the best in the group, it's my own dang fault for hanging out with some of the smartest guys in that world.
 
-Join us on the [Polymer Slack](https://polymer.slack.com/) feed!
+Join us on the [Lit Slack](https://polymer.slack.com/) feed!
