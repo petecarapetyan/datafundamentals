@@ -1,6 +1,6 @@
 # datafundamentals.com
 
-This repo is a personalized/customized version of the [not-five38 fins-rocket-theme](https://github.com/petecarapetyan/fins-rocket-themes/blob/main/not-five38/src/docs/) code.
+This repo is a personalized/customized version of the [not-axios fins-rocket-theme](https://github.com/petecarapetyan/fins-rocket-themes/blob/main/not-axios/src/docs/) code.
 
 ## For more information on fins-rocket-themes
 
