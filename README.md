@@ -1,11 +1,7 @@
-# What is datafundamentals.com?
+# datafundamentals.com
 
-dataFundamentals is a legacy marketing brand for Betterology Corp
+This repo is a personalized/customized version of the [not-five38 fins-rocket-theme](https://github.com/petecarapetyan/fins-rocket-themes/blob/main/not-five38/src/docs/) code.
 
-This site is now more of a placeholder, until the legacy dataFundamentals site pages are installed under this new stack.
+## For more information on fins-rocket-themes
 
-## What is this new stack?
-
-This site is running on [Rocket](https://rocket.modern-web.dev/) and the [not-optimize theme](https://webappwriter.com/rocket-themes/all/thumbnails/#not-optimize-theme), both of which are currently in a pre-release status.
-
-For live view, see [dataFundamentals.com](https://datafundamentals.com)
+This and other `fins-rocket-themes` are discussed [here](https://webappwriter.com/rocket-themes/) in more detail.
