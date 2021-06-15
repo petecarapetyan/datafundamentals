@@ -1,55 +1,27 @@
-# Current: 2021
+# Current: 2021 || 10
 
-Don't let that 'static' web site seem unimportant to you.
+The [closest thing to a corporate blog](https://webappwriter.com/blog/) bloviates extensively on market trends. Perhaps the best summary is that corporations are becoming aware of how much simpler things are now, since 2005 and even 2015.
 
-It's a critical piece for a lot of small businesses, and long overdue for some catching up, on the tech side.
+## Resources
 
-## Site Migrations
+We've plowed a bunch of resources into Rocket SSG this year, or more specifically - [theming for same](https://webappwriter.com/fins/). 
 
-As expectations change, we have to adjust.
+This is all work that only a mathematician specializing in set theory and armed with our assumptions should ever care about. Since that doesn't describe anyone, we expect that this work may go un-noticed, except to our customers who _**just want to succeed, dammit.**_
 
-The first half of 2021 is dedicated primarily to site migrations and upgrades - for myself _and_ my customers.
+## Testable Hypothesis
 
-### What are these new expectations?
+["No battle plan ever survives contact with the enemy"](https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder) so you see [all current experiments](https://github.com/petecarapetyan/fins-rocket-themes#readme) out in the open.
 
-It used to be a source of pride to produce a site using WordPress, Drupal or similar CMS. Wow! I got a pretty web site deployed. Woohoo! A pretty theme, and everything!
+By making each one of the 17 web presences slightly different, we have - and shall continue to learn many things, just by iterating.
 
-Nobody thought much about the speed of the site, or how complex it had become to maintain it, and even to author content.
+The public nature of the testing has helped, as well.
 
-Interestingly enough, it is the PWA world that has destroyed this sense of complacency. Apps, out-performing _static_ sites! Whodathunkit?
+## Google as Lead?
 
-Specifically:
+Markets trend by feelings, but then coalesce around simple value math - _eventually_. So feelings can be hazardous for techies making decisions on what stacks to invest in. Today it's WordPress and React. Tommorrow?
 
-- Sales performance: How can my business adjust automatically to the metrics?
-- Speed! People won't put up with a slow site any more.
-- Maintainability: Our sites rot away because they are too awkward to keep fresh, or because the complex software behind them isn't kept updated, or because it really doesn't fit anyone's job description.
-- App-like features - too many to mention here, but expectations have changed about how a minimally functional site should perform.
+Google has been strangely patient in sticking with simple math in it's Chrome investments, and _**had gone almost entirely standards based**_, putting it almost a decade behind Facebook's React in market adoption.
 
-### Here's the to do list for the 1st quarter of the year
+For the past few years our efforts have almost entirely focused on the Google Chrome and Google Firebase team's offerings. Yet this is without loyalty. For us, it's just simple math - these two teams have come closest by a mile, to meeting our values.
 
-- Working with some yet-unpublished systems for deploying fresh sites as perfect PWAs
-- Dozen or so sites need to be migrated from Wordpress and even Drupal
-- Analytics, social media and A/B testing need to move into a tight feedback loop
-- This capability needs to be automated and organized as a simple process for potential customers
-
-### Follow along
-
-Recent years gave me a lot of exposure into how many small enterprises and institutions are stuck with these same problems.
-
-Please feel free to follow my progress this year if any of this applies to you, as well.
-
-## Ulterior Motives
-
-Couple things here, just in case it's not obvious:
-
-1. Our static web sites just haven't panned out the way businesses had hoped, and that's a huge opportunity for someone with my skill sets in 2021. Given that **38% of the web is WordPress**, that's a lot of pain. And a good opportunity, for me.
-
-1. It's a personal thing, but I'm really hoping to dis-entangle from the one thing that almost everyone else wants - which is long projects that keep me occupied for months or even years at a time. Migrations are the right size contract, for me at this stage of my career, and I get to meet new friends and get fresh experiences again in a few days or maybe even hours, when a migration is done.
-
-... the new stacks just coming on line are looking soooo very good. _More on that in coming months._
-
-## Apps
-
-You'll soon find that static sites won't be static going forward, and will instead begin taking on many of the expectations now afforded only to apps.
-
-Meanwhile, once the migration process is organized and functioning well as a cookie cutter process, I'll be able to focus again on keeping up with the apps world.
+By values, this standards based Google approach looks more like React than React does, more like WordPress than WordPress does, and more like AWS than AWS does. Feels odd - wherever we go, there is Google. Yet we claim no loyalty.

@@ -1,9 +1,19 @@
-# 2021 - a year for site migrations
+# About
 
-This year will see app-building skills turn towards [**site migrations**](/about/current/#site-migrations).
+dataFundamentals was established as a trade name for the work of Pete Carapetyan and other associates since 2000.
 
-This might seem retro, but it's not. _**The best apps have made the normal WordPress or Drupal site look sluggish and difficult to maintain, by comparison.**_ Whodathunkit?
+It is a corporate focused market.
 
-Keep coming back, or even check in with me personally, if you want to [**follow the progress**](/about/current/) so you can update your own site, using what I learn and develop.
+Our traditional market is replacing legacy stacks within corporate departments, by executing tasks in newer and simpler stacks - as these stacks mature.
 
-pete@datafundamentals.com
+_**Simplicity really is inevitable**_, it's not just our slogan. But what if legacy-complexity is all your team knows?
+
+Web based HTML/CSS/JS is where the market is headed. Fast, simple, cheap - AND already becoming a standard within the major browsers. Incumbents such as React and phone apps will fight this trend - but they may find themselves [too clever by half](https://en.wiktionary.org/wiki/too_clever_by_half).
+
+App or web site? It is all merging, the distinction is becoming meaningless.
+
+We follow simpler, standards based coding, through this market.
+
+- Our customers go farther with their budgets.
+- Allows corporations to retain their code investments over a longer period of time.
+- It flows with, rather than against, the direction of the market.

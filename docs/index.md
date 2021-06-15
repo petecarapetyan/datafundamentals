@@ -4,14 +4,30 @@ layout: layout-home
 ---
 <hr>
 
-# 20 years of bringing apps into the world
+# Web presence: Faster, simpler, cheaper, less clever.
 
-My name is Pete Carapetyan.
+Maybe your company is hamstrung by WordPress? Or your web presence is slow & inadequate? Or it isn't app-like? We can help.
 
-dataFundamentals has been my brand name for contracting to the corporate world since Jan 1, 2000
+Faster, simpler, cheaper, and less clever tech is being employed by your competitors every day.
 
-A lot has change in the 20 years since first published a site to this domain. This is probably the 4th major platform swap? I didn't even keep track.
+We have Proof of Concept packages to let you try out alternatives for a song - or full service app capabilities, if you or your tech staff needs the boost.
 
-One thing hasn't changed. I'm still bringing apps into the world, and those apps are still employing the latest technology standards.
+## Your struggling tech staff may not be the problem
 
-This site is written in [rocket](https://rocket.modern-web.dev/) with a theme by yours truly.
+Tooling changes fast. Staff can look bad maintaining old tech that won't compete. We can provide simpler options that are not forced into the herculean cleverness that older tech had to provide, before modern standards (think 2021) emerged.
+
+The _**good news for your tech & content staff?**_ Yes, the skills required may be newer, but changes make things simpler, rather than more complex. The resulting code is cheaper to maintain.
+
+## Try out a PoC
+
+With a bill small enough to hand in on your corporate expense account, you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.] You may be surprised how simple a PoC can be.
+
+Then if you like what you see, your tech staff can take over - without or with our help. Or we'll take the entire project turn-key, if that's your preference.
+
+## With simplicity, comes great power
+
+You only _thought_ WordPress plugins were powerful, until you saw what those same vendors might offer in more modern standards-based libraries. And because standards-based platforms have fewer moving parts and are easier to write for, it's a wider and more up to date marketplace of capabilities for you to choose from.
+
+Think shopify, commenting, scheduling, and a host of add on functionalities that you thought you needed WordPress plugins for.
+
+The best part is the need for some WordPress plugins will disappear entirely, especially those helping you manage the extremely complex WordPress environment.
