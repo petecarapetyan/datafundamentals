@@ -125,7 +125,6 @@ body[layout^='layout-home'] #main-header a:hover {
 }
 
 #main-header .logo-link {
-  display: none;
   color: var(--primary-color);
   order: 0;
 }
