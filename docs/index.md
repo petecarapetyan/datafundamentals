@@ -20,7 +20,7 @@ The _**good news for your tech & content staff?**_ Yes, the skills required may 
 
 ## Try out a PoC
 
-With a bill small enough to hand in on your corporate expense account, you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.] You may be surprised how simple a PoC can be.
+With a bill small enough to hand in on your corporate expense account, you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.](/packages/) You may be surprised how simple a PoC can be.
 
 Then if you like what you see, your tech staff can take over - without or with our help. Or we'll take the entire project turn-key, if that's your preference.
 
@@ -30,4 +30,4 @@ You only _thought_ WordPress plugins were powerful, until you saw what those sam
 
 Think shopify, commenting, scheduling, and a host of add on functionalities that you thought you needed WordPress plugins for.
 
-The best part is the need for some WordPress plugins will disappear entirely, especially those helping you manage the extremely complex WordPress environment.
+The best part? The need for some critical WordPress plugins will disappear entirely, especially those helping you manage the extremely complex WordPress environment, itself.
