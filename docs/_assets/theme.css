@@ -37,7 +37,7 @@ body[layout^='layout-home'] #main-header,
   top: 81px;
 }
 
-#main-header.header-grid-area {
+.header-grid-area {
   font-family: 'Karla', sans-serif;
 }
 
