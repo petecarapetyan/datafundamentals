@@ -16,7 +16,7 @@ We have Proof of Concept packages to let you try out alternatives for a song - o
 
 Tooling changes fast. Staff can look bad maintaining old tech that won't compete. We can provide simpler options that are not forced into the herculean cleverness that older tech had to provide, before modern standards (think 2021) emerged.
 
-The _**good news for your tech & content staff?**_ Yes, the skills required may be newer, but changes make things simpler, rather than more complex. The resulting code is cheaper to maintain.
+The _**good news for your tech & content staff?**_ Yes, new standards take a few minutes to learn. But they make things simpler, rather than more complex. The resulting code is cheaper to maintain.
 
 ## Try out a PoC
 

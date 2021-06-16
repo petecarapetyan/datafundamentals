@@ -1,3 +1,21 @@
+
+@media screen and (max-width: 700px) {
+  .mobile-name {
+    display: block;
+  }
+  .logo-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 701px) {
+  .mobile-name {
+    display: none;
+  }
+  .logo-link {
+    display: block;
+  }
+}
+
 .socials {
   display: flex;
   justify-items: center;
@@ -8,7 +26,12 @@
   margin: 2px;
 }
 
+
 #main-header.header-grid-area {
+  display: grid;
+}
+
+#main-header.header-grid-area .primary-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
