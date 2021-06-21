@@ -1,5 +1,7 @@
 # Packages
 
+Packages are available in addition to [commercial support](/packages/commercial/)
+
 ## Corporate Proof of Concept Packages
 
 We are delighted to offer the following packages to help you achieve your _**faster, simpler, cheaper, less clever**_ &nbsp; &nbsp; web presence.

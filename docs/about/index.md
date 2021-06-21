@@ -17,3 +17,7 @@ We follow simpler, standards based coding, through this market.
 - Our customers go farther with their budgets.
 - Allows corporations to retain their code investments over a longer period of time.
 - It flows with, rather than against, the direction of the market.
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/datafundamentals?hide_landing_page_details=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->

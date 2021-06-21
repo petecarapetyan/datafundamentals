@@ -20,7 +20,7 @@ The _**good news for your tech & content staff?**_ Yes, new standards take a few
 
 ## Try out a PoC
 
-With a bill small enough to hand in on your corporate expense account, you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.](/packages/) You may be surprised how simple a PoC can be.
+With a [bill small enough to hand in on your corporate expense account](/packages/commercial/), you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.](/packages/) You may be surprised how simple a PoC can be.
 
 Then if you like what you see, your tech staff can take over - without or with our help. Or we'll take the entire project turn-key, if that's your preference.
 
