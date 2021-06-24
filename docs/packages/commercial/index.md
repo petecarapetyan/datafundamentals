@@ -10,7 +10,7 @@ Just a reminder - most of what I do is free, open source or community based.
 
 ## Consulting
 
-If you need commercial help or just , I'd be happy to start with a paid appointment.
+If you need commercial help, I'd be happy to start with a paid appointment.
 
 - A more personal walk-through
 - [Proof of Concept packages](/packages/)
