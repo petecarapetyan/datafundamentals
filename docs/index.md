@@ -18,6 +18,16 @@ Tooling changes fast. Staff can look bad maintaining old tech that won't compete
 
 The _**good news for your tech & content staff?**_ Yes, new standards take a few minutes to learn. But they make things simpler, rather than more complex. The resulting code is cheaper to maintain.
 
+## Oh, but we do _apps!_
+
+Your team isn't a WordPress, team? It does apps? React, or Vue or Angular, even native apps? And back ends, too?
+
+Hold back on the snark just for a few seconds there, buckaroo. A junior dev with some carefully curated PWA stacks and a Firebase or Amplify back end might give your team a run for its money, at least on the customer metrics.
+
+React was pretty darn impressive stuff in 2016. Sadly for some of us, it's not 2016 any more.
+
+For example, what happens in 2022, when so many huge corporations get serious about maturing [their Web Component libraries](https://open-wc.org/guides/community/component-libraries/)?
+
 ## Try out a PoC
 
 With a [bill small enough to hand in on your corporate expense account](/packages/commercial/), you can Proof of Concept the latest tech, maybe even with some existing content! Check out [some of our PoC packages.](/packages/) You may be surprised how simple a PoC can be.
@@ -31,3 +41,5 @@ You only _thought_ WordPress plugins were powerful, until you saw what those sam
 Think shopify, commenting, scheduling, and a host of add on functionalities that you thought you needed WordPress plugins for.
 
 The best part? The need for some critical WordPress plugins will disappear entirely, especially those helping you manage the extremely complex WordPress environment, itself.
+
+[Would you like to discuss it a further?](/packages/commercial/)
