@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+
+<head>
+  <title>Case Study: Modular Java Workspace Administration | Home</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
+    media="all" />
+</head>
+
+<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- ">
+  <div class="main-container container">
+    <header role="banner" id="page-header">
+      <div class="region region-header">
+        <section id="block-block-1" class="block block-block clearfix">
+          <p>
+            <img alt="" src="/_merged_assets/_static/images/datafundamentals250simplici.gif"
+              style="height: 42px; width: 250px" /><img alt="" src="/_merged_assets/_static/images/whiteBanner.jpg"
+              style="height: 42px; width: 43px" /><a href="/content/dev-offerings"><img alt=""
+                src="/_merged_assets/_static/images/peteBanner.jpg" /></a><a href="/content/ops-offerings"><img alt=""
+                src="/_merged_assets/_static/images/opsJeffBanner.jpg" /></a><a href="/content/df.lab"><img alt=""
+                src="/_merged_assets/_static/images/scienceBanner.jpg" /></a><a href="/content/unicorn-gap"><img alt=""
+                src="/_merged_assets/_static/images/unicornGapBanner.jpg"
+                style="border-style: solid; border-width: 0px" /></a>
+          </p>
+        </section>
+      </div>
+    </header>
+    <!-- /#page-header -->
+
+    <div class="row">
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-sidebar-first well">
+          <section id="block-system-navigation" class="block block-system block-menu clearfix">
+            <h2 class="block-title">pre2015 Content</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/content/jeff-on-ops-blog" title="">2014 Jeff on Ops Blog</a>
+              </li>
+              <li class="last leaf">
+                <a href="/content/wins-and-losses" title="">Wins & Losses 2000-2014</a>
+              </li>
+            </ul>
+            <h2 class="block-title">Back</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/pre2015/" title="">Back to pre2015 Home</a>
+              </li>
+              <li class="last leaf">
+                <a href="/" title="">dataFundamentals.com Home</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+      <!-- /#sidebar-first -->
+
+
+      <section class="col-sm-9">
+        <ol class="breadcrumb">
+          <li><a href="/content/wins-and-losses" class="active-trail">Wins Losses</a></li>
+          <li class="active">Case Study: Modular Java Workspace Administration </li>
+        </ol> <a id="main-content"></a>
+        <h1 class="page-header">Case Study: Modular Java Workspace Administration </h1>
+        <article id="node-32" class="node node-page clearfix"
+          about="/content/case-study-modular-java-workspace-administration" typeof="foaf:Document">
+          <header>
+            <span property="dc:title" content="Case Study: Modular Java Workspace Administration "
+              class="rdf-meta element-hidden"></span>
+          </header>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even" property="content:encoded">
+                <h6>by Pete Carapetyan</h6>
+                <p> </p>
+                <h3>Resistance To Modularity</h3>
+                <p>Cultural resistance to OSGi in particular, and modularity in general, is almost as deep and broad as
+                  the resistance to testing, build management, continuous integration, and other practices that irritate
+                  the typical corporate Java developer who 'just wants to write code'.</p>
+                <h3>Foolishness</h3>
+                <p>In a foolish bid to woo the hearts and minds of his brethern, I authored MJWA or Modular Java
+                  Workspace Administration. Hey! It only took Maven 10 years to win the hearts and minds of developers,
+                  maybe if similarly easy (?) tooling was available for modularity, it wouldn't be thought of as such an
+                  evil hindrance to java developers.</p>
+                <h3>How It Works</h3>
+                <p>Written in the Groovy languge with little more than a delimited text file as source data, MJWA allows
+                  the developer to almost instantly set up a workspace with mulitple modules. It can be run as OSGi or
+                  without, just using separate Maven modules. Later, as each new module needs to be added, the developer
+                  only adds a line to the delimited file, re runs, and his new module appears.</p>
+                <p>Thus, the resistance to modularity disappears instantly, and developers embrace OSGi, singing Kum Ba
+                  Yah and holding hands.</p>
+                <p>Additionally, as each new version advances, the change need only be made in the one delimited file,
+                  and automagically pom.xml and MANIFEST.MF files are updated and ready to commit to git or the SCM of
+                  choice.</p>
+                <p>Code Link: <a href="https://bitbucket.org/betterology/mjwa.createproject">MJWA</a> at bitbucket.</p>
+                <h3>Status</h3>
+                <p>This project is usable by the author, but as of yet not documented sufficiently to help much of
+                  anyone else. Thus, it has probably not delivered on it's stated purpose.</p>
+              </div>
+            </div>
+          </div>
+          <footer>
+          </footer>
+        </article>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="footer container">
+    <div class="region region-footer">
+      <section id="block-block-2" class="block block-block clearfix">
+        <hr />
+        <p class="rtecenter">
+          @devopsjeff
+          <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>
+          @appwritercom
+        </p>
+        <hr />
+        <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
+      </section>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
