@@ -1,12 +1,11 @@
 ---
 layout: layout-sidebar
-title: index
+title: Pre2015
 eleventyNavigation:
-  key: index
-  title: index
-  parent: pre2015
+  key: pre2015
+  title: Pre2015
+
   # order: 42
-# FIXME - Values shown above are currently derived from the file path only, except order which is also commented out because it is optional. Correct as desired and delete comment(s).
 ---
 
 # Archive
