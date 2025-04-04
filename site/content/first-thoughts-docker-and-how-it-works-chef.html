@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+
+<head>
+  <title>First Thoughts on Docker (and how it works with Chef) | Home</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css"
+    media="all" />
+</head>
+
+<body role="document" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- ">
+  <div class="main-container container">
+    <header role="banner" id="page-header">
+      <div class="region region-header">
+        <section id="block-block-1" class="block block-block clearfix">
+          <p>
+            <img alt="" src="/static/images/datafundamentals250simplici.gif"
+              style="height: 42px; width: 250px" /><img alt="" src="/static/images/whiteBanner.jpg"
+              style="height: 42px; width: 43px" /><a href="/content/dev-offerings"><img alt=""
+                src="/static/images/peteBanner.jpg" /></a><a href="/content/ops-offerings"><img alt=""
+                src="/static/images/opsJeffBanner.jpg" /></a><a href="/content/df.lab"><img alt=""
+                src="/static/images/scienceBanner.jpg" /></a><a href="/content/unicorn-gap"><img alt=""
+                src="/static/images/unicornGapBanner.jpg"
+                style="border-style: solid; border-width: 0px" /></a>
+          </p>
+        </section>
+      </div>
+    </header>
+    <!-- /#page-header -->
+
+    <div class="row">
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-sidebar-first well">
+          <section id="block-system-navigation" class="block block-system block-menu clearfix">
+            <h2 class="block-title">pre2015 Content</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/content/jeff-on-ops-blog" title="">2014 Jeff on Ops Blog</a>
+              </li>
+              <li class="last leaf">
+                <a href="/content/wins-and-losses" title="">Wins & Losses 2000-2014</a>
+              </li>
+            </ul>
+            <h2 class="block-title">Back</h2>
+
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="/pre2015/" title="">Back to pre2015 Home</a>
+              </li>
+              <li class="last leaf">
+                <a href="/" title="">dataFundamentals.com Home</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <section class="col-sm-9">
+        <a id="main-content"></a>
+        <h1 class="page-header">First Thoughts on Docker (and how it works with Chef)</h1>
+        <article id="node-62" class="node node-jeff-on-ops-blog-article clearfix"
+          about="/content/first-thoughts-docker-and-how-it-works-chef" typeof="sioc:Item foaf:Document">
+          <header>
+            <span property="dc:title" content="First Thoughts on Docker (and how it works with Chef)"
+              class="rdf-meta element-hidden"></span> <span class="submitted">
+              <div class="user-picture">
+                <img typeof="foaf:Image" class="img-responsive"
+                  src="/static/images/picture-11-1400705926-itok=KFQI6U-7.jpg"
+                  alt="Jeff Carapetyan&#039;s picture" title="Jeff Carapetyan&#039;s picture" />
+              </div>
+              <span property="dc:date dc:created" content="2015-01-14T12:48:23-06:00" datatype="xsd:dateTime"
+                rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/jeff-carapetyan"
+                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Jeff Carapetyan</span> on Wed, 01/14/2015 -
+                12:48</span>
+            </span>
+          </header>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even" property="content:encoded">
+                <p>While some of you have been more rapid in your acclimation and introduction with Docker, I have been
+                  taking a cautionary, slow approach to using it. After all, I have focused a lot of my time on
+                  mastering Chef, so abandoning that to learn Docker seemed like a waste of previous effort. My solution
+                  was to simply make sure that I learned Docker from a Chef users standpoint. These are some of my
+                  immediate takeaways. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>The Docker community cookbook is an excellent
+                        tool.</strong></span> </li>
+                </ul>
+                <p>Overall, I have denounced community cookbooks as overly complicated bits of spaghetti code for the
+                  novice, and I still stand by that statement. However when I gave it an initial shot I found incredibly
+                  easy to use. There are built in resources for downloading images, creating containers, and all of them
+                  have highly usable attributes for almost all the docker subcommands. I originally started with Ansible
+                  to install Docker thinking it would be easier, and it is simply not the case. The community cookbook
+                  is a good tool that will tie into your existing code setup.</p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>Using the cookbook is not a substitute for understanding
+                        Docker</strong></span></li>
+                </ul>
+                <p>This falls more in line with my normal community cookbook thinking. While Docker is a relatively
+                  shallow API, it is still an alien concept to traditional config management, and there is a learning
+                  curve to undersanding the underlying principles of LXC containers. You would be wise to get a solid
+                  grasp of Docker and linux containers before trying to implement them with Chef. Some key concepts
+                  include<br />
+                  - VM host vs. docker image vs. Docker containers<br />
+                  - How to effectively run multiple containers on the same system. <br />
+                  - Volume Mounting to efffectively use external data on containers. <br />
+                  - Effective use of container tagging for management.<br />
+                  - Dockerfiles, and their importance on building custom images. </p>
+                <p>The Docker documentation is pretty extensive on the home page and is a good reference tool for that,
+                  so I will skip rehashing it.</p>
+                <ul>
+                  <li><strong><span style="font-size:14px">Once you have the basics, the Docker cookbook is a helpful
+                        tool.</span></strong></li>
+                </ul>
+                <p>This is more opinion than fact. I found that after grasping the basics of Docker, using the LWRP
+                  attributes for containers made it much easier to learn the subcommands required to effectively use
+                  linux containers. Secondly, having it as more human readable code made it much easier than long
+                  command line entries. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>There are some things the Docker cookbook can't
+                        do.</strong></span> </li>
+                </ul>
+                <p>Okay, I'll rephrase this slightly. There aren't many things it can't do, in fact there was only one
+                  that really bothered me. That is the inability to setup persistent data containers for setting up
+                  clusters which require that. This is more related to. </p>
+                <ol>
+                  <li>Persistent data containers are not the current standard practice (not best practice)</li>
+                  <li>Everybody that is all about Docker is ignoring the elephant in the room of the data problem.</li>
+                </ol>
+                <p>This will likely be a problem fixed when a best practice is adopted with container data management,
+                  but for now it remains a problem for you and homemade bash scripts. </p>
+                <ul>
+                  <li><span style="font-size:14px"><strong>In summary, stick with the Docker cookbook for
+                        now</strong>. </span></li>
+                </ul>
+                <p>Another biased opinion. If you are a relative Docker and Chef novice, stick with the community
+                  cookbook only starting off! I have read some of the things involving knife-container and how to use
+                  your existing cookbooks to adjust run-state of containers, but it is not for the faint of heart. Stick
+                  with the basics, and when you are comfortable build on it from there. </p>
+                <p>Keep calm, and Chef/Docker on.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="footer container">
+    <div class="region region-footer">
+      <section id="block-block-2" class="block block-block clearfix">
+        <hr />
+        <p class="rtecenter">
+          @devopsjeff
+          <a href="mailto:pete@datafundamentals.com">pete@datafundamentals.com</a>
+          @appwritercom
+        </p>
+        <hr />
+        <p class="rtecenter">Copyright 2014, 2015 - dataFundamentals</p>
+      </section>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
