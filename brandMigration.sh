@@ -15,6 +15,7 @@ mv mv old_docs/about site
 mv old_docs/sitemap.njk site
 rm static/logo.svg
 rm -rf extra
+rm -rf _site-dev
 #  remove images using separate python script /Users/petecarapetyan/work/appwriter2035/sites/ImageCleanupUtility.py
 rm -rf site/_includes/_joiningBlocks/_layoutHome/ 
 rm -rf site/_includes/_joiningBlocks/content
