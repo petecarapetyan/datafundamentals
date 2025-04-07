@@ -26,6 +26,11 @@ rm -rf site/_includes/_joiningBlocks/header
 rm -rf site/_includes/partials             
 rm site/_includes/snippet/header-dark-switch.njk
 rm site/_includes/snippet/header-logo.njk
+rm static/images/bulksplash-*.jpg
+rm static/logo.svg
+rm site/_includes/layout-simulator.njk
+rm site/_includes/layout-home-background.njk
+
 # no favicon was found pertaining to datafundamentals
 # hand copy this into the theme.css
 # ```
