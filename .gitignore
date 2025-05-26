@@ -1,5 +1,9 @@
+historydeleteme.txt
 commit.sh
+extra/
 _site/
+_site-dev
+
 
 deploy.sh
 

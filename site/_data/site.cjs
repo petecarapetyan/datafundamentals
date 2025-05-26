@@ -2,7 +2,7 @@ module.exports = function () {
   return {
     dir: 'ltr',
     lang: 'en',
-    name: 'dataFundamentals',
+    name: 'OSIAX',
     description: 'not-axios  theme',
     socialLinks: [
       {
