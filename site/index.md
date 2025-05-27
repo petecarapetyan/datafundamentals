@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: Home
 layout: layout-home
 eleventyNavigation:
   key: /
