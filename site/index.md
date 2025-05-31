@@ -1,10 +1,6 @@
 ---
 title: Home
 layout: layout-home
-eleventyNavigation:
-  key: /
-  title: Home
-  order: 999
 ---
 <hr>
 
