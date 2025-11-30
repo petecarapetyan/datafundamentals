@@ -8,7 +8,7 @@ module.exports = function () {
       {
         name: 'GitHub',
         image: '/static/brand-logos/github.svg',
-        url: 'https://github.com/petecarapetyan/datafundamentals',
+        url: 'https://github.com/datafundamentals/dF',
       },
       {
         name: 'Youtube',
@@ -21,7 +21,7 @@ module.exports = function () {
         url: 'https://www.linkedin.com/in/pete-carapetyan-b3a39b/',
       },
     ],
-    gitSiteUrl: 'https://github.com/petecarapetyan/datafundamentals',
+    gitSiteUrl: 'https://github.com/datafundamentals/dF',
     gitBranch: 'main',
     helpUrl: 'https://github.com/petecarapetyan/datafundamentals/issues',
     logoAlt: 'datafundamentals',
